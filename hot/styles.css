@@ -1,0 +1,33 @@
+
+
+// Define the function to fetch data from the API
+async function getData() {
+    const apiUrl = 'https://api.sampleapis.com/coffee/hot';
+    const dataList = document.getElementById('data-list');
+    const errorMessage = document.getElementById('error-message');
+  
+    try {
+      const response = await fetch(apiUrl);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      
+      // Clear any existing data or error messages
+      dataList.innerHTML = '';
+      errorMessage.textContent = '';
+  
+      // Append the fetched data to the list
+      data.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = item.title;
+        dataList.appendChild(listItem);
+      });
+    } catch (error) {
+      // Display the error message
+      errorMessage.textContent = `Error: ${error.message}`;
+    }
+  }
+
+  // Call the getData function when the window loads
+window.onload = getData;
