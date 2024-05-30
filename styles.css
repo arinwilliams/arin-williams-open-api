@@ -1,3 +1,182 @@
 html {
-    background-color: #a5742a;
+  background-color: #a5742a;
+}
+
+body {
+  background-color: transparent;
+  padding: 2 10px;
+  /* border: 1px solid red; <-- this is how I can see border visually*/
+  margin: 0;
+  padding-top: 20px; /* Add padding to avoid content being hidden behind the fixed nav */
+}
+
+/* used https://typescale.com/ for sizing */
+h1 {
+  color: #fff;
+  text-shadow: 0 0 4px #653318;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 47.78px;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 39.81px;
+  text-align: center; /* Center text vertically */
+}
+
+h3 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 33.18px;
+}
+
+h4 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 0 2px #d5d0ce;
+  font-size: 27.65px;
+}
+
+h5 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 23.04px;
+}
+
+h6 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 19.2px;
+}
+
+a:link {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  max-width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text horizontally */
+
+}
+
+.drinks a {
+  background-color: #ffffffad;
+  color: #653318;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.drinks a:hover {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+.homeNav a {
+  text-align: center;
+  background-color: #ffffffad;
+  color:#653318;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+}
+
+.drinks {
+  text-align: center;
+}
+
+.drinks h4 {
+  color: #653318;
+}
+
+img {
+  width: 250px;
+  height: auto;
+  border: 4px solid #653318;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nextCoffee {
+  background-color: #653318;  
+  padding: 20px; /* Some padding inside the section */
+  border: 2px solid #ccc; /* A light gray border */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center align the text */
+  margin: 20px auto; /* Center the section horizontally with some margin */
+  max-width: 300px; /* Maximum width of the section */
+}
+
+#nextCoffee input[type="button"] {
+  background-color: #ffffffad; /* Blue background color */
+  color: #653318; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Some padding */
+  font-size: 16px; /* Font size */
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+
+}
+
+/* Hover effect for the button */
+#nextCoffee input[type="button"]:hover {
+  background-color: #4f6bfb; /* lighter brown on hover */
+}
+
+
+/*
+MOBILE DEVICE
+*/
+
+
+@media screen and (max-width: 360px) {
+  body {
+    padding-top: 20px; 
+  }
+
+  img {
+    width: 100%; 
+    max-width: 200px; 
+    border: 3px solid #653318;
+  }
+
+  h1 {
+    font-size: 28px; 
+  }
+
+  h2, h3, h4 {
+    font-size: 20px; 
+  }
+
+  .homeNav a {
+    padding: 8px; 
+  }
+
+  .drinks a {
+    padding: 8px; 
+  }
+
+  #nextCoffee {
+    padding: 15px;
+    margin: 20px auto; 
+    max-width: 250px; 
+  }
+
+  #nextCoffee input[type="button"] {
+    padding: 8px 16px; 
+    font-size: 14px; /
+  }
 }
