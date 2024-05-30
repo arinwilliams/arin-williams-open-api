@@ -111,21 +111,21 @@ img {
 
 #nextCoffee {
   background-color: #653318;  
-  padding: 20px; /* Some padding inside the section */
-  border: 2px solid #ccc; /* A light gray border */
-  border-radius: 10px; /* Rounded corners */
-  text-align: center; /* Center align the text */
-  margin: 20px auto; /* Center the section horizontally with some margin */
-  max-width: 300px; /* Maximum width of the section */
+  padding: 20px;
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  text-align: center;
+  margin: 20px auto;
+  max-width: 300px; 
 }
 
 #nextCoffee input[type="button"] {
-  background-color: #ffffffad; /* Blue background color */
-  color: #653318; /* White text color */
-  border: none; /* No border */
-  border-radius: 5px; /* Slightly rounded corners */
-  padding: 10px 20px; /* Some padding */
-  font-size: 16px; /* Font size */
+  background-color: #ffffffad; 
+  color: #653318;
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px;
+  font-size: 16px; 
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 
@@ -133,7 +133,7 @@ img {
 
 /* Hover effect for the button */
 #nextCoffee input[type="button"]:hover {
-  background-color: #4f6bfb; /* lighter brown on hover */
+  background-color: #4f6bfb;
 }
 
 
@@ -177,6 +177,6 @@ MOBILE DEVICE
 
   #nextCoffee input[type="button"] {
     padding: 8px 16px; 
-    font-size: 14px; /
+    font-size: 14px;
   }
 }
